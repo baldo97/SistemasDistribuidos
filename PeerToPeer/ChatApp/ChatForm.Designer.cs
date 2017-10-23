@@ -49,6 +49,9 @@
             this.textBoxMessage.Name = "textBoxMessage";
             this.textBoxMessage.Size = new System.Drawing.Size(476, 20);
             this.textBoxMessage.TabIndex = 1;
+            this.textBoxMessage.Enter += new System.EventHandler(this.textBoxMessage_Enter);
+            this.textBoxMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxMessage_KeyDown);
+            this.textBoxMessage.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMessage_KeyPress);
             // 
             // richTextBoxScreen
             // 

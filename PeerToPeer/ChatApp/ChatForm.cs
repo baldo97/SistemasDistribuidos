@@ -23,7 +23,7 @@ namespace ChatApp
         IQuickReturnTraderChat channel;
         ServiceHost host = null;
         ChannelFactory<IQuickReturnTraderChat> channelFactory = null;
-        string userID = Environment.UserName;
+        string userID = "";
         private void StartService()
         {
             //Instantiate new ServiceHost
@@ -35,8 +35,6 @@ namespace ChatApp
                                              ("QuickTraderChatEndpoint");
             channel = channelFactory.CreateChannel();
             //Lets others know that someone new has joined
-            channel.Say("Admin", "*** New User " + userID + " Joined ****" +
-                                                        Environment.NewLine);
         }
         private void StopService()
         {
@@ -60,15 +58,43 @@ namespace ChatApp
 
         private void btnSend_Click_1(object sender, EventArgs e)
         {
-            string temp = textBoxMessage.Text + Environment.NewLine;
-            //Invoke the Service
-            channel.Say(userID, temp);
-            textBoxMessage.Clear();
+            this.SendMessage();
         }
 
         private void ChatForm_Load(object sender, EventArgs e)
         {
+            Login login = new Login();
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                this.userID = login.UserName;
+            }
+            channel.Say("Admin", "*** New User " + userID + " Joined ****" +
+                                                       Environment.NewLine);
 
+        }
+
+        private void textBoxMessage_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxMessage_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+                this.SendMessage();
+        }
+
+        private void textBoxMessage_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void SendMessage()
+        {
+            string temp = textBoxMessage.Text + Environment.NewLine;
+            //Invoke the Service
+            channel.Say(userID, temp);
+            textBoxMessage.Clear();
         }
     }
 }
