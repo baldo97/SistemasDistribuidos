@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterService", "CounterService\CounterService.csproj", "{887595D5-41C4-464E-87D0-01A18383F665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterServiceClient", "CounterServiceClient\CounterServiceClient.csproj", "{BD1C3F41-91B8-49A3-8A32-BA73AE11AEB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{887595D5-41C4-464E-87D0-01A18383F665} = {887595D5-41C4-464E-87D0-01A18383F665}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{887595D5-41C4-464E-87D0-01A18383F665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{887595D5-41C4-464E-87D0-01A18383F665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{887595D5-41C4-464E-87D0-01A18383F665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1C3F41-91B8-49A3-8A32-BA73AE11AEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1C3F41-91B8-49A3-8A32-BA73AE11AEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1C3F41-91B8-49A3-8A32-BA73AE11AEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1C3F41-91B8-49A3-8A32-BA73AE11AEB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

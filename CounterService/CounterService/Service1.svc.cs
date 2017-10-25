@@ -30,6 +30,5 @@ namespace CounterService
                 return nostateless;
             }
         }
-
     }
 }
