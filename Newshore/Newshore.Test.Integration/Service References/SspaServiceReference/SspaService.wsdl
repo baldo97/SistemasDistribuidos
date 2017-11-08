@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SspaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59518/SspaService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59518/SspaService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59518/SspaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NewshoreWebService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISoapService_GetAllSuperPoweredEntitiesXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperPoweredEntitiesXml" />
+  </wsdl:message>
+  <wsdl:message name="ISoapService_GetAllSuperPoweredEntitiesXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperPoweredEntitiesXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapService_GetAllSuperHeroesXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperHeroesXml" />
+  </wsdl:message>
+  <wsdl:message name="ISoapService_GetAllSuperHeroesXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperHeroesXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISoapService_GetAllVillainsXml_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllVillainsXml" />
+  </wsdl:message>
+  <wsdl:message name="ISoapService_GetAllVillainsXml_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllVillainsXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_GetAllSuperPoweredEntitiesJson_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperPoweredEntitiesJson" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_GetAllSuperPoweredEntitiesJson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperPoweredEntitiesJsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_GetAllSuperHeroesJson_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperHeroesJson" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_GetAllSuperHeroesJson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllSuperHeroesJsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_GetAllVillainsJson_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllVillainsJson" />
+  </wsdl:message>
+  <wsdl:message name="IRestService_GetAllVillainsJson_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllVillainsJsonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISoapService">
+    <wsdl:operation name="GetAllSuperPoweredEntitiesXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapService/GetAllSuperPoweredEntitiesXml" message="tns:ISoapService_GetAllSuperPoweredEntitiesXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapService/GetAllSuperPoweredEntitiesXmlResponse" message="tns:ISoapService_GetAllSuperPoweredEntitiesXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSuperHeroesXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapService/GetAllSuperHeroesXml" message="tns:ISoapService_GetAllSuperHeroesXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapService/GetAllSuperHeroesXmlResponse" message="tns:ISoapService_GetAllSuperHeroesXml_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVillainsXml">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISoapService/GetAllVillainsXml" message="tns:ISoapService_GetAllVillainsXml_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISoapService/GetAllVillainsXmlResponse" message="tns:ISoapService_GetAllVillainsXml_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IRestService">
+    <wsdl:operation name="GetAllSuperPoweredEntitiesJson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestService/GetAllSuperPoweredEntitiesJson" message="tns:IRestService_GetAllSuperPoweredEntitiesJson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestService/GetAllSuperPoweredEntitiesJsonResponse" message="tns:IRestService_GetAllSuperPoweredEntitiesJson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSuperHeroesJson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestService/GetAllSuperHeroesJson" message="tns:IRestService_GetAllSuperHeroesJson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestService/GetAllSuperHeroesJsonResponse" message="tns:IRestService_GetAllSuperHeroesJson_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVillainsJson">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRestService/GetAllVillainsJson" message="tns:IRestService_GetAllVillainsJson_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRestService/GetAllVillainsJsonResponse" message="tns:IRestService_GetAllVillainsJson_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SOAPEndPoint" type="tns:ISoapService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllSuperPoweredEntitiesXml">
+      <soap:operation soapAction="http://tempuri.org/ISoapService/GetAllSuperPoweredEntitiesXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSuperHeroesXml">
+      <soap:operation soapAction="http://tempuri.org/ISoapService/GetAllSuperHeroesXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllVillainsXml">
+      <soap:operation soapAction="http://tempuri.org/ISoapService/GetAllVillainsXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SspaService">
+    <wsdl:port name="SOAPEndPoint" binding="tns:SOAPEndPoint">
+      <soap:address location="http://localhost:59518/SspaService.svc/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

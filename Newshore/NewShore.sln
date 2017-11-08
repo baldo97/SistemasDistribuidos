@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C8C575FD-1BFC-4A2E-ADE5-19DF5C9D46DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.Entities", "Newshore.Entities\Newshore.Entities.csproj", "{E5AA27A7-EAB2-42CC-9A90-32E5A78D7B9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAcces", "DataAcces", "{95949332-F508-4907-9B94-77147980B183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.Data", "Newshore.Data\Newshore.Data.csproj", "{F5433ED2-AABA-4B79-B540-BDC930F06C2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{106E0BEC-C99F-44C2-B49B-5E8015DD0500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{52C73B23-8C3A-4D5A-A04D-B24DE727E0B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.Service", "Newshore.Service\Newshore.Service.csproj", "{4A33376B-2F80-4361-8B10-E4EE7CBA15C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{AC1035AA-D00A-4FA0-9F29-3E15F76B74A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.Test.Unit", "Newshore.Test.Unit\Newshore.Test.Unit.csproj", "{5B3FE5C3-42CE-4678-8B4A-D7BB7422AA82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.Test.Integration", "Newshore.Test.Integration\Newshore.Test.Integration.csproj", "{0473ED3A-9943-4EBF-BEBC-568ED937150F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C648F4B7-289A-457E-9428-4C1148D42B23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newshore.Common", "Newshore.Common\Newshore.Common.csproj", "{5ACA693A-74BD-4251-993C-FD7A7D017BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewshoreWebService", "NewshoreWebService\NewshoreWebService.csproj", "{1C23FE31-5D54-4509-8BED-0A3D7354509B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5AA27A7-EAB2-42CC-9A90-32E5A78D7B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5AA27A7-EAB2-42CC-9A90-32E5A78D7B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5AA27A7-EAB2-42CC-9A90-32E5A78D7B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5AA27A7-EAB2-42CC-9A90-32E5A78D7B9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5433ED2-AABA-4B79-B540-BDC930F06C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5433ED2-AABA-4B79-B540-BDC930F06C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5433ED2-AABA-4B79-B540-BDC930F06C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5433ED2-AABA-4B79-B540-BDC930F06C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A33376B-2F80-4361-8B10-E4EE7CBA15C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A33376B-2F80-4361-8B10-E4EE7CBA15C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A33376B-2F80-4361-8B10-E4EE7CBA15C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A33376B-2F80-4361-8B10-E4EE7CBA15C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B3FE5C3-42CE-4678-8B4A-D7BB7422AA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B3FE5C3-42CE-4678-8B4A-D7BB7422AA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B3FE5C3-42CE-4678-8B4A-D7BB7422AA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B3FE5C3-42CE-4678-8B4A-D7BB7422AA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0473ED3A-9943-4EBF-BEBC-568ED937150F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0473ED3A-9943-4EBF-BEBC-568ED937150F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0473ED3A-9943-4EBF-BEBC-568ED937150F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0473ED3A-9943-4EBF-BEBC-568ED937150F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ACA693A-74BD-4251-993C-FD7A7D017BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ACA693A-74BD-4251-993C-FD7A7D017BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ACA693A-74BD-4251-993C-FD7A7D017BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ACA693A-74BD-4251-993C-FD7A7D017BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C23FE31-5D54-4509-8BED-0A3D7354509B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C23FE31-5D54-4509-8BED-0A3D7354509B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C23FE31-5D54-4509-8BED-0A3D7354509B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C23FE31-5D54-4509-8BED-0A3D7354509B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5AA27A7-EAB2-42CC-9A90-32E5A78D7B9F} = {C8C575FD-1BFC-4A2E-ADE5-19DF5C9D46DA}
+		{F5433ED2-AABA-4B79-B540-BDC930F06C2C} = {95949332-F508-4907-9B94-77147980B183}
+		{4A33376B-2F80-4361-8B10-E4EE7CBA15C9} = {106E0BEC-C99F-44C2-B49B-5E8015DD0500}
+		{5B3FE5C3-42CE-4678-8B4A-D7BB7422AA82} = {52C73B23-8C3A-4D5A-A04D-B24DE727E0B9}
+		{0473ED3A-9943-4EBF-BEBC-568ED937150F} = {52C73B23-8C3A-4D5A-A04D-B24DE727E0B9}
+		{1C23FE31-5D54-4509-8BED-0A3D7354509B} = {AC1035AA-D00A-4FA0-9F29-3E15F76B74A5}
+		{5ACA693A-74BD-4251-993C-FD7A7D017BC3} = {C648F4B7-289A-457E-9428-4C1148D42B23}
+	EndGlobalSection
+EndGlobal

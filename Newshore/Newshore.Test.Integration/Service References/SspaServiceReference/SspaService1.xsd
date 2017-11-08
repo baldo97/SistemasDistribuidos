@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59518/SspaService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NewshoreWebService" />
+  <xs:element name="GetAllSuperPoweredEntitiesXml">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperPoweredEntitiesXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/NewshoreWebService" minOccurs="0" name="GetAllSuperPoweredEntitiesXmlResult" nillable="true" type="q1:ArrayOfPersonType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperHeroesXml">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperHeroesXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/NewshoreWebService" minOccurs="0" name="GetAllSuperHeroesXmlResult" nillable="true" type="q2:ArrayOfPersonType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllVillainsXml">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllVillainsXmlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/NewshoreWebService" minOccurs="0" name="GetAllVillainsXmlResult" nillable="true" type="q3:ArrayOfPersonType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperPoweredEntitiesJson">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperPoweredEntitiesJsonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/NewshoreWebService" minOccurs="0" name="GetAllSuperPoweredEntitiesJsonResult" nillable="true" type="q4:ArrayOfPersonType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperHeroesJson">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSuperHeroesJsonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/NewshoreWebService" minOccurs="0" name="GetAllSuperHeroesJsonResult" nillable="true" type="q5:ArrayOfPersonType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllVillainsJson">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllVillainsJsonResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/NewshoreWebService" minOccurs="0" name="GetAllVillainsJsonResult" nillable="true" type="q6:ArrayOfPersonType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
