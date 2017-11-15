@@ -12,7 +12,7 @@ namespace ChatApp
 {
     public partial class Login : Form
     {
-        public String UserName;
+        public String UserName = "";
         public Login()
         {
             InitializeComponent();
@@ -20,8 +20,14 @@ namespace ChatApp
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            this.UserName = this.txtUserName.Text;
-            this.DialogResult = DialogResult.OK;
+            if (!String.IsNullOrEmpty(this.txtUsername.Text))
+            {
+                this.UserName = this.txtUsername.Text;
+                this.DialogResult = DialogResult.OK;
+            }
+            //else TODO Implementar validacion username vacio
+                 
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
