@@ -4,12 +4,16 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace NetRemotingClientServer
 {
     public class Server
     {
+        public static int UsedThreads = 0;
+        public static int MaxThreads = 5;
+        public static object Locker = new object();
         public static void StartServer()
         {
             TcpListener server = null;
@@ -23,48 +27,16 @@ namespace NetRemotingClientServer
             // Start listening for client requests.
             server.Start();
 
-            // Buffer for reading data
-            Byte[] bytes = new Byte[256];
-            String data = null;
-
             // Enter the listening loop.
-            while (true)
+            while (UsedThreads < MaxThreads)
             {
-                Console.Write("Waiting for a connection... ");
-
-                // Perform a blocking call to accept requests.
-                // You could also user server.AcceptSocket() here.
-                TcpClient client = server.AcceptTcpClient();
-                Console.WriteLine("Connected!");
-
-                data = null;
-
-                // Get a stream object for reading and writing
-                NetworkStream stream = client.GetStream();
-
-                int i;
-
-                // Loop to receive all the data sent by the client.
-                while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
+                lock (Server.Locker)
                 {
-                    // Translate data bytes to a ASCII string.
-                    data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-                    Console.WriteLine("Received: {0}", data);
-
-                    // Process the data sent by the client.
-                    data = data.ToUpper();
-
-                    byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
-
-                    // Send back a response.
-                    stream.Write(msg, 0, msg.Length);
-                    Console.WriteLine("Sent: {0}", data);
+                    Server.UsedThreads += 1;
                 }
-
-                // Shutdown and end connection
-                client.Close();
-
-
+                Thread th = new Thread(() => ServerRequest.Request(server));
+                th.Start();
+                    
             }
         }
     }
