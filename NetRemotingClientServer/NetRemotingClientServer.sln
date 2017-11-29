@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetRemotingClientServer", "NetRemotingClientServer\NetRemotingClientServer.csproj", "{9BD8DDDA-ED13-4B8F-A0FB-8E120F767995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpServer", "TcpServer\TcpServer.csproj", "{BC2DCBAA-918D-401E-B511-AA702C28401E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpClient", "TcpClient\TcpClient.csproj", "{2F1D73BC-2A5B-46B5-A827-EACD37D0AB86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BD8DDDA-ED13-4B8F-A0FB-8E120F767995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD8DDDA-ED13-4B8F-A0FB-8E120F767995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD8DDDA-ED13-4B8F-A0FB-8E120F767995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD8DDDA-ED13-4B8F-A0FB-8E120F767995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2DCBAA-918D-401E-B511-AA702C28401E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2DCBAA-918D-401E-B511-AA702C28401E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2DCBAA-918D-401E-B511-AA702C28401E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2DCBAA-918D-401E-B511-AA702C28401E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F1D73BC-2A5B-46B5-A827-EACD37D0AB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F1D73BC-2A5B-46B5-A827-EACD37D0AB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F1D73BC-2A5B-46B5-A827-EACD37D0AB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F1D73BC-2A5B-46B5-A827-EACD37D0AB86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
